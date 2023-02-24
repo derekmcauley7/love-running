@@ -9,4 +9,57 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
+    color: #3a3a3a;
+}
+
+/* heading and logo */
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #25252252;
+    text-decoration: none;
+}
+
+
+#logo {
+    float: left;
+    font-size: 280%;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    float: right;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outter {
+    height: 600px;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
